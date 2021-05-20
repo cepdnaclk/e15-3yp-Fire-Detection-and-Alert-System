@@ -1,57 +1,67 @@
-___
-# DELETE THIS INSTRUCTIONS AND ADD AN INTRODUCTION ABOUT YOUR PROJECT
-___
+---
+layout: home
+permalink: index.html
 
-# eYY-3yp-project-template
+# Please update this with your repository name and title
+repository-name: e15-3yp-Fire-Detection-and-Alert-System
+title: Fire Detection and Alert System
+---
 
-This is a sample repository you can use for your Embedded Systems project. Once you followed these instructions, remove the text and add a brief introduction to here.
+[comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
-### Enable GitHub Pages
+# Fire Detection and Alert System
 
-You can put the things to be shown in GitHub pages into the _docs/_ folder. Both html and md file formats are supported. You need to go to settings and enable GitHub pages and select _main_ branch and _docs_ folder from the dropdowns, as shown in the below image.
+---
 
-![image](https://user-images.githubusercontent.com/11540782/98789936-028d3600-2429-11eb-84be-aaba665fdc75.png)
+## Team
+-  E/15/154, JAYASOORIYA J.K.C.N., [e15154@eng.pdn.ac.lk](mailto:e15154@eng.pdn.ac.lk)
+-  E/15/187, KULANJITH G.D., [devingallage@gmail.com](mailto:devingallage@gmail.com)
+-  E/15/142, JAYALATH A.H.G.D., [ganindudananja@gmail.com](mailto:ganindudananja@gmail.com)
 
-### Special Configurations
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Solution Architecture](#solution-architecture )
+3. [Links](#links)
 
-These projects will be automatically added into [https://projects.ce.pdn.ac.lk](). If you like to show more details about your project on this site, you can fill the parameters in the file, _/docs/index.json_
+---
 
-```
-{
-  "title": "This is the title of the project",
-  "team": [
-    {
-      "name": "Team Member Name 1",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    },
-    {
-      "name": "Team Member Name 2",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    },
-    {
-      "name": "Team Member Name 3",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    }
-  ],
-  "supervisors": [
-    {
-      "name": "Dr. Supervisor 1",
-      "email": "email@eng.pdn.ac.lk"
-    },
-    {
-      "name": "Supervisor 2",
-      "email": "email@eng.pdn.ac.lk"
-    }
-  ],
-  "tags": ["Web", "Embedded Systems"]
-}
-```
+## Introduction
 
-Once you filled this _index.json_ file, please verify the syntax is correct. (You can use [this](https://jsonlint.com/) tool).
+According to National Fire Protection Association (NFPA), there were 1,319,500 fire cases were reported only in USA in 2017. Nearly 40% of them are structure fires. Moreover, following statements are highlights from NFPA report.
 
-### Page Theme
+- In 2017, 22 fires in the United States resulted in losses of at least $10 million each, for a cumulative total of $12.5 billion in direct property losses. These fires resulted in the deaths of 52 civilians and one firefighter, and injuries to 213 civilians and 20 firefighters.
+- The other 20 large-loss fires in 2017 involved structures and resulted in a total property loss of $747.7 million.
+- Smoking materials were the leading cause of home fire deaths in 2012-2016.  
 
-A custom theme integrated with this GitHub Page, which is based on [github.com/cepdnaclk/eYY-project-theme](https://github.com/cepdnaclk/eYY-project-theme). If you like to remove this default theme, you can remove the file, _docs/\_config.yml_ and use HTML based website.
+![Graph](docs/data/images/)  
+
+[Intro](docs/data/videos/)
+
+
+
+
+## Solution Architecture
+
+There are two ways a fire can be happened.
+
+- Sudden fire
+
+- Slowly growing fire
+
+We are going to implement a set of devices with the capability of detecting smoke and CO particles so that, the device will detect both the above mentioned fire types and the users will get warnings only if neccessary through an alarm on the device itself and an alert will be sent to the users of the mobile app and the web application. If the fire is massive or danger enough the intensity of the alarm will get increased and if the option for emergency is enabled, the emergency authorities will get notifications about the fire disaster.
+
+How the device works?
+
+- There are two types of devices come with Ignio and they are “Ignio node” and the “Ignio relay”. The Ignio node is integrated with the sensors and an alarm so that it takes data from sensors and pass down to the Ignio relay through wi-fi which is connected to the ISP directly via a home network or an enterprise network. The sudden fires will get detected by the Ignio node itself through the sensors by detecting the passing of particular bandwidths for particle density and CO emission rate. And, the other type of fires will be predicted by analysing the periodic data on the microservice architectured API.
+
+
+## Links
+
+- <a href = "https://github.com/cepdnaclk/e15-3yp-Fire-Detection-and-Alert-System" target = "_blank"> Project Repository </a>
+- <a href = "https://cepdnaclk.github.io/e15-3yp-Fire-Detection-and-Alert-System/" target = "_blank">Project Page</a>
+- <a href = "http://www.ce.pdn.ac.lk/" target = "_blank">Department of Computer Engineering</a>
+- <a href = "https://eng.pdn.ac.lk/" target = "_blank">University of Peradeniya</a>
+
+
+[//]: # (Please refer this to learn more about Markdown syntax)
+[//]: # (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
