@@ -33,9 +33,9 @@ According to National Fire Protection Association (NFPA), there were 1,319,500 f
 - The other 20 large-loss fires in 2017 involved structures and resulted in a total property loss of $747.7 million.
 - Smoking materials were the leading cause of home fire deaths in 2012-2016.  
 
-![Graph](docs/data/images/)  
+![Graph](docs/data/images/USOverview2.jpg)  
 
-[Intro](docs/data/videos/)
+[Intro](docs/data/videos/IGNIO.mp4)
 
 
 
